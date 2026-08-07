@@ -1,0 +1,199 @@
+{
+  "Header": {
+    "home": "Home",
+    "tours": "Tours",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "bookNow": "Book Now"
+  },
+  "Hero": {
+    "welcome": "Welcome to Costa Rica",
+    "title": "Discover unforgettable experiences",
+    "description": "We help travelers discover the best tours in La Fortuna with trusted local operators, personalized assistance and an easy reservation process.",
+    "exploreTours": "Explore Tours",
+    "contactUs": "Contact Us",
+    "benefits": {
+    "noAdvancePaymentTitle": "No advance payment",
+    "noAdvancePaymentDescription": "Request your reservation without paying Proyecta Tu Viaje in advance.",
+    "directPaymentTitle": "Pay the local operator",
+    "directPaymentDescription": "Pay the local operator directly on the day you take the tour.",
+    "freeCancellationTitle": "Free cancellation",
+    "freeCancellationDescription": "Cancel free of charge by notifying us at least 24 hours before the tour."
+}
+  },
+  "FeaturedTours": {
+  "subtitle": "Explore La Fortuna",
+  "title": "Featured Experiences",
+  "description": "Discover memorable adventures with trusted local operators and personalized assistance throughout your reservation.",
+  "emptyTitle": "No featured tours available",
+  "emptyDescription": "Please check back soon."
+},
+"TourCard": {
+  "reviews": "reviews",
+  "from": "From",
+  "viewTour": "View Tour"
+},
+"Footer": {
+  "description": "Personalized assistance for booking memorable tours with trusted local operators in La Fortuna, Costa Rica.",
+  "explore": "Explore",
+  "home": "Home",
+  "tours": "Tours",
+  "contact": "Contact",
+  "reservationProcess": "Reservation Process",
+  "contactTitle": "Contact",
+  "reservationInfo": "Reservation Information",
+  "reservationDescription": "Send your request and we will confirm availability with the tour operator. Your reservation is confirmed only after receiving our confirmation message.",
+  "requestReservation": "Request a Reservation",
+  "rightsReserved": "All rights reserved."
+},
+"About": {
+  "subtitle": "About Proyecta Tu Viaje",
+  "title": "Your local connection to memorable experiences in La Fortuna",
+  "paragraph1": "Proyecta Tu Viaje helps travelers discover and request reservations for carefully selected tours in La Fortuna, Costa Rica.",
+  "paragraph2": "Our goal is to make the process easier and more personal. You choose the experience, send your preferred date and time, and we verify availability directly with the local operator.",
+  "paragraph3": "Once availability is confirmed, you receive the reservation details and the conditions for payment directly associated with the selected tour.",
+  "contact": "Contact Us",
+  "whyChooseUs": "Why travelers choose us",
+  "bottomTitle": "Discover La Fortuna with confidence",
+  "bottomDescription": "Horseback riding, zipline adventures, nature walks, coffee tours and other authentic Costa Rican experiences.",
+  "value1Title": "Personalized assistance",
+  "value1Description": "We help you choose an experience according to your interests, schedule and travel plans.",
+  "value2Title": "Trusted local operators",
+  "value2Description": "Reservation requests are coordinated with experienced tour operators in the La Fortuna area.",
+  "value3Title": "Clear reservation process",
+  "value3Description": "You receive availability confirmation and the important details before attending the activity."
+},
+"Testimonials": {
+  "eyebrow": "Real experiences",
+  "title": "What our travelers say",
+  "description": "Read about the experiences of travelers who booked activities with local operators in Costa Rica.",
+  "outOfFive": "out of 5 stars"
+},
+"FAQ": {
+  "subtitle": "Frequently Asked Questions",
+  "title": "Everything you need to know before requesting a tour",
+  "description": "Find answers about reservations, payments, cancellations, schedules, weather and communication with our team.",
+  "benefits": {
+    "noAdvancePayment": "No advance payment",
+    "directPayment": "Pay the local operator on the tour day",
+    "freeCancellation": "Free cancellation"
+  },
+  "items": {
+    "reservation": {
+      "question": "How do I request a reservation?",
+      "answer": "Choose the tour you are interested in, complete the reservation form with your preferred date and time, and submit your request. We will confirm availability directly with the local operator."
+    },
+    "confirmation": {
+      "question": "Is my reservation confirmed immediately?",
+      "answer": "No. Your request remains pending until we verify availability with the local tour operator and send you a confirmation message."
+    },
+    "payment": {
+      "question": "When do I pay for the tour?",
+      "answer": "You do not pay Proyecta Tu Viaje anything in advance. Payment is made directly to the local tour operator on the day of the tour, according to the payment methods accepted by the operator."
+    },
+    "noAdvancePayment": {
+      "question": "Why doesn't Proyecta Tu Viaje charge in advance?",
+      "answer": "Our purpose is to connect travelers with trusted local tour operators in La Fortuna. By paying the operator directly on the day of the activity, you can reserve without making an advance payment through our website and enjoy greater flexibility when planning your trip."
+    },
+    "weather": {
+      "question": "What happens if it rains?",
+      "answer": "Many tours operate normally in light rain. If weather conditions are unsafe, the local operator may reschedule or cancel the activity according to the applicable safety conditions."
+    },
+    "cancellation": {
+      "question": "Can I cancel my reservation?",
+      "answer": "Yes. You can cancel your reservation free of charge. We kindly ask you to notify us at least 24 hours before the scheduled start of the tour so we can inform the local operator and make the space available to other travelers."
+    },
+    "contact": {
+      "question": "Can I contact you by WhatsApp or email?",
+      "answer": "Yes. You can contact us directly by WhatsApp or email if you would like personalized assistance before submitting your reservation request."
+    }
+  }
+},
+  "LocationMap": {
+  "subtitle": "Our Service Area",
+  "title": "Discover unforgettable experiences in La Fortuna",
+  "description1": "Proyecta Tu Viaje coordinates tour reservation requests in La Fortuna, one of Costa Rica's most popular destinations for nature, adventure and wildlife experiences.",
+  "description2": "Once availability has been confirmed, you will receive the meeting point and all the instructions provided by the local tour operator.",
+  "location": "Location",
+  "mapTitle": "Map of La Fortuna, Costa Rica"
+},
+"TourDetail": {
+  "back": "Back to experiences",
+  "duration": "Duration",
+  "difficulty": "Difficulty",
+  "languages": "Languages",
+  "rating": "Rating",
+  "about": "About this experience",
+  "includes": "What's included",
+  "whatToBring": "What to bring",
+  "noInformation": "Information will be available when the reservation is confirmed.",
+  "priceAdult": "Price per adult",
+  "from": "From",
+  "childrenFrom": "Children from",
+  "reservationInfo": "Contact us to check availability with the local operator.",
+  "noAdvancePayment": "No advance payment is required.",
+  "directPayment": "Pay the local operator directly on the day of the tour.",
+  "freeCancellation": "Free cancellation with at least 24 hours' notice.",
+  "requestReservation": "Request a reservation",
+  "contactUs": "Contact us",
+  "paymentNotice": "Your reservation is confirmed only after you receive our confirmation message."
+},
+"Contact": {
+  "hero": {
+    "subtitle": "Contact Us",
+    "title": "Request Your Reservation",
+    "description": "Tell us which experience you would like to enjoy. We will check availability directly with the local operator and send you the confirmation. No advance payment is required and you may cancel free of charge by notifying us at least 24 hours before the tour."
+  },
+  "form": {
+    "title": "Reservation request",
+    "description": "Complete the form to request availability. Submitting this request does not automatically confirm your reservation or generate any charge.",
+    "trustTitle": "Book with confidence",
+    "trustNoAdvancePayment": "You do not make any advance payment to Proyecta Tu Viaje.",
+    "trustDirectPayment": "Payment is made directly to the local operator on the day of the tour.",
+    "trustFreeCancellation": "You may cancel free of charge by notifying us at least 24 hours in advance.",
+    "emailSubject": "New tour reservation request",
+    "fullName": "Full name",
+    "fullNamePlaceholder": "Enter your full name",
+    "email": "Email",
+    "tour": "Tour",
+    "selectExperience": "Select an experience",
+    "noTours": "No tours are currently available.",
+    "preferredDate": "Preferred date",
+    "preferredTime": "Preferred time",
+    "selectTime": "Select a time",
+    "adults": "Adults",
+    "children": "Children",
+    "message": "Message or special request",
+    "messagePlaceholder": "Tell us anything else we should know.",
+    "submit": "Send reservation request",
+    "confirmationNotice": "Your reservation is confirmed only after you receive our confirmation message."
+  },
+  "sidebar": {
+  "directContactTitle": "Prefer direct contact?",
+  "directContactDescription": "You can also contact us through WhatsApp or email for personalized assistance.",
+  "whatsapp": "Contact by WhatsApp",
+  "email": "Send an email",
+  "howItWorksTitle": "How it works",
+  "step1": "1. Send your reservation request.",
+  "step2": "2. We check availability with the local operator.",
+  "step3": "3. You receive the confirmation and tour details.",
+  "step4": "4. Pay the local operator directly on the day of the tour.",
+  "importantTitle": "Book with confidence",
+  "noAdvancePayment": "You do not make advance payments to Proyecta Tu Viaje.",
+  "directPayment": "Payment is made directly to the local operator.",
+  "freeCancellation": "You may cancel free of charge by notifying us at least 24 hours in advance.",
+  "back": "Back to all experiences"
+}
+},
+"ThankYou": {
+  "title": "We've received your request!",
+  "description": "Thank you for contacting Proyecta Tu Viaje. We will check availability directly with the local tour operator and reply as soon as possible.",
+  "importantTitle": "What happens next?",
+  "point1": "Your reservation is not confirmed yet.",
+  "point2": "No advance payment is required.",
+  "point3": "Payment is made directly to the local operator on the day of the tour after your reservation has been confirmed.",
+  "viewTours": "Explore more tours",
+  "home": "Return home"
+}
+}

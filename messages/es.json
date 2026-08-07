@@ -1,0 +1,199 @@
+{
+  "Header": {
+    "home": "Inicio",
+    "tours": "Tours",
+    "about": "Nosotros",
+    "faq": "Preguntas frecuentes",
+    "contact": "Contacto",
+    "bookNow": "Reservar"
+  },
+  "Hero": {
+    "welcome": "Bienvenido a Costa Rica",
+    "title": "Descubre experiencias inolvidables",
+    "description": "Ayudamos a los viajeros a descubrir los mejores tours en La Fortuna con operadores locales confiables, atención personalizada y un proceso sencillo de reservación.",
+    "exploreTours": "Explorar tours",
+    "contactUs": "Contáctanos",
+    "benefits": {
+  "noAdvancePaymentTitle": "Sin pagos por adelantado",
+  "noAdvancePaymentDescription": "Solicita tu reservación sin pagar previamente a Proyecta Tu Viaje.",
+  "directPaymentTitle": "Pago directo al operador",
+  "directPaymentDescription": "Pagas directamente al operador local el día que realizas el tour.",
+  "freeCancellationTitle": "Cancelación gratuita",
+  "freeCancellationDescription": "Puedes cancelar sin costo avisándonos al menos 24 horas antes del tour."
+}
+  },
+  "FeaturedTours": {
+  "subtitle": "Explora La Fortuna",
+  "title": "Experiencias destacadas",
+  "description": "Descubre aventuras inolvidables con operadores locales de confianza y asistencia personalizada durante todo el proceso de reservación.",
+  "emptyTitle": "No hay tours destacados disponibles",
+  "emptyDescription": "Por favor, vuelve a intentarlo pronto."
+},
+"TourCard": {
+  "reviews": "reseñas",
+  "from": "Desde",
+  "viewTour": "Ver tour"
+},
+"Footer": {
+  "description": "Asistencia personalizada para reservar experiencias inolvidables con operadores locales de confianza en La Fortuna, Costa Rica.",
+  "explore": "Explorar",
+  "home": "Inicio",
+  "tours": "Tours",
+  "contact": "Contacto",
+  "reservationProcess": "Proceso de reservación",
+  "contactTitle": "Contacto",
+  "reservationInfo": "Información de la reservación",
+  "reservationDescription": "Envíanos tu solicitud y confirmaremos la disponibilidad con el operador del tour. Tu reservación quedará confirmada únicamente después de recibir nuestro mensaje de confirmación.",
+  "requestReservation": "Solicitar una reservación",
+  "rightsReserved": "Todos los derechos reservados."
+},
+"About": {
+  "subtitle": "Sobre Proyecta Tu Viaje",
+  "title": "Tu conexión local con experiencias inolvidables en La Fortuna",
+  "paragraph1": "Proyecta Tu Viaje ayuda a los viajeros a descubrir y solicitar reservaciones para tours cuidadosamente seleccionados en La Fortuna, Costa Rica.",
+  "paragraph2": "Nuestro objetivo es hacer el proceso más sencillo y personalizado. Tú eliges la experiencia, envías la fecha y hora de preferencia, y nosotros verificamos la disponibilidad directamente con el operador local.",
+  "paragraph3": "Una vez confirmada la disponibilidad, recibirás los detalles de la reservación y las condiciones de pago correspondientes al tour seleccionado.",
+  "contact": "Contáctanos",
+  "whyChooseUs": "¿Por qué los viajeros nos eligen?",
+  "bottomTitle": "Descubre La Fortuna con confianza",
+  "bottomDescription": "Cabalgatas, canopy, caminatas por la naturaleza, tours de café y muchas otras experiencias auténticas de Costa Rica.",
+  "value1Title": "Asistencia personalizada",
+  "value1Description": "Te ayudamos a elegir la experiencia según tus intereses, horario y plan de viaje.",
+  "value2Title": "Operadores locales de confianza",
+  "value2Description": "Las solicitudes de reservación se coordinan con operadores turísticos experimentados de la zona de La Fortuna.",
+  "value3Title": "Proceso de reservación claro",
+  "value3Description": "Recibes la confirmación de disponibilidad y toda la información importante antes de asistir a la actividad."
+},
+"Testimonials": {
+  "eyebrow": "Experiencias reales",
+  "title": "Lo que dicen nuestros viajeros",
+  "description": "Conoce las experiencias de personas que reservaron actividades con operadores locales en Costa Rica.",
+  "outOfFive": "de 5 estrellas"
+},
+"FAQ": {
+  "subtitle": "Preguntas frecuentes",
+  "title": "Todo lo que necesitas saber antes de solicitar un tour",
+  "description": "Encuentra respuestas sobre reservaciones, pagos, cancelaciones, horarios, clima y comunicación con nuestro equipo.",
+  "benefits": {
+    "noAdvancePayment": "Sin pagos por adelantado",
+    "directPayment": "Pagas al operador local el día del tour",
+    "freeCancellation": "Cancelación gratuita"
+  },
+  "items": {
+    "reservation": {
+      "question": "¿Cómo solicito una reservación?",
+      "answer": "Elige el tour que te interesa, completa el formulario de reservación con la fecha y hora de preferencia y envía tu solicitud. Nosotros confirmaremos la disponibilidad directamente con el operador local."
+    },
+    "confirmation": {
+      "question": "¿Mi reservación queda confirmada inmediatamente?",
+      "answer": "No. Tu solicitud permanecerá pendiente hasta que verifiquemos la disponibilidad con el operador turístico local y te enviemos un mensaje de confirmación."
+    },
+    "payment": {
+      "question": "¿Cuándo pago el tour?",
+      "answer": "No debes realizar ningún pago por adelantado a Proyecta Tu Viaje. El pago se realiza directamente al operador local el día del tour, utilizando los métodos de pago que el operador tenga disponibles."
+    },
+    "noAdvancePayment": {
+      "question": "¿Por qué Proyecta Tu Viaje no cobra por adelantado?",
+      "answer": "Nuestro objetivo es conectar a los viajeros con operadores turísticos locales de confianza en La Fortuna. Al pagar directamente al operador el día de la actividad, puedes reservar sin realizar pagos anticipados a través de nuestro sitio web y disfrutar de mayor flexibilidad para organizar tu viaje."
+    },
+    "weather": {
+      "question": "¿Qué sucede si llueve?",
+      "answer": "Muchos tours se realizan normalmente cuando hay lluvia ligera. Si las condiciones climáticas no son seguras, el operador local podrá reprogramar o cancelar la actividad según las condiciones de seguridad aplicables."
+    },
+    "cancellation": {
+      "question": "¿Puedo cancelar mi reservación?",
+      "answer": "Sí. Puedes cancelar tu reservación sin ningún costo. Te solicitamos avisarnos al menos 24 horas antes de la hora programada para el inicio del tour, para que podamos informar al operador local y permitir que el espacio sea ofrecido a otros viajeros."
+    },
+       "contact": {
+      "question": "¿Puedo contactarlos por WhatsApp o correo electrónico?",
+      "answer": "Sí. Puedes contactarnos directamente por WhatsApp o correo electrónico si deseas recibir asistencia personalizada antes de enviar tu solicitud de reservación."
+    }
+  }
+},
+"LocationMap": {
+  "subtitle": "Nuestra área de servicio",
+  "title": "Descubre experiencias inolvidables en La Fortuna",
+  "description1": "Proyecta Tu Viaje coordina solicitudes de reservación para tours en La Fortuna, uno de los destinos más visitados de Costa Rica por su naturaleza, aventura y vida silvestre.",
+  "description2": "Una vez confirmada la disponibilidad, recibirás el punto de encuentro y todas las instrucciones necesarias proporcionadas por el operador local.",
+  "location": "Ubicación",
+  "mapTitle": "Mapa de La Fortuna, Costa Rica"
+},
+"TourDetail": {
+  "back": "Volver a las experiencias",
+  "duration": "Duración",
+  "difficulty": "Dificultad",
+  "languages": "Idiomas",
+  "rating": "Calificación",
+  "about": "Sobre esta experiencia",
+  "includes": "¿Qué incluye?",
+  "whatToBring": "¿Qué llevar?",
+  "noInformation": "La información estará disponible al confirmar la reservación.",
+  "priceAdult": "Precio por adulto",
+  "from": "Desde",
+  "childrenFrom": "Niños desde",
+  "reservationInfo": "Contáctanos para verificar la disponibilidad con el operador local.",
+  "noAdvancePayment": "No realizas ningún pago por adelantado.",
+  "directPayment": "Pagas directamente al operador local el día del tour.",
+  "freeCancellation": "Cancelación gratuita avisándonos al menos 24 horas antes.",
+  "requestReservation": "Solicitar reservación",
+  "contactUs": "Contáctanos",
+  "paymentNotice": "La reservación queda confirmada únicamente cuando recibas nuestro mensaje de confirmación."
+},
+"Contact": {
+  "hero": {
+    "subtitle": "Contáctanos",
+    "title": "Solicita tu reservación",
+    "description": "Indícanos cuál experiencia deseas realizar. Verificaremos la disponibilidad directamente con el operador local y te enviaremos la confirmación. No realizas ningún pago por adelantado y podrás cancelar gratuitamente avisándonos al menos 24 horas antes del tour."
+  },
+  "form": {
+    "title": "Solicitud de reservación",
+    "description": "Completa el formulario para solicitar disponibilidad. Enviar esta solicitud no confirma automáticamente la reservación ni genera ningún cobro.",
+    "trustTitle": "Reserva con tranquilidad",
+    "trustNoAdvancePayment": "No realizas ningún pago por adelantado a Proyecta Tu Viaje.",
+    "trustDirectPayment": "El pago se realiza directamente al operador local el día del tour.",
+    "trustFreeCancellation": "Puedes cancelar gratuitamente avisándonos al menos 24 horas antes.",
+    "emailSubject": "Nueva solicitud de reservación de tour",
+    "fullName": "Nombre completo",
+    "fullNamePlaceholder": "Escribe tu nombre completo",
+    "email": "Correo electrónico",
+    "tour": "Tour",
+    "selectExperience": "Selecciona una experiencia",
+    "noTours": "Actualmente no hay tours disponibles.",
+    "preferredDate": "Fecha de preferencia",
+    "preferredTime": "Hora de preferencia",
+    "selectTime": "Selecciona una hora",
+    "adults": "Adultos",
+    "children": "Niños",
+    "message": "Mensaje o solicitud especial",
+    "messagePlaceholder": "Cuéntanos cualquier otra información que debamos conocer.",
+    "submit": "Enviar solicitud de reservación",
+    "confirmationNotice": "Tu reservación quedará confirmada únicamente cuando recibas nuestro mensaje de confirmación."
+  },
+  "sidebar": {
+  "directContactTitle": "¿Prefieres contactarnos directamente?",
+  "directContactDescription": "También puedes escribirnos por WhatsApp o correo electrónico para recibir atención personalizada.",
+  "whatsapp": "Contactar por WhatsApp",
+  "email": "Enviar un correo electrónico",
+  "howItWorksTitle": "¿Cómo funciona?",
+  "step1": "1. Envías tu solicitud de reservación.",
+  "step2": "2. Verificamos la disponibilidad con el operador local.",
+  "step3": "3. Recibes la confirmación y los detalles del tour.",
+  "step4": "4. Pagas directamente al operador local el día del tour.",
+  "importantTitle": "Reserva con tranquilidad",
+  "noAdvancePayment": "No realizas pagos por adelantado a Proyecta Tu Viaje.",
+  "directPayment": "El pago se realiza directamente al operador local.",
+  "freeCancellation": "Puedes cancelar gratuitamente avisándonos al menos 24 horas antes.",
+  "back": "Volver a todas las experiencias"
+}      
+},
+"ThankYou": {
+  "title": "¡Hemos recibido tu solicitud!",
+  "description": "Gracias por comunicarte con Proyecta Tu Viaje. Revisaremos la disponibilidad directamente con el operador local y te responderemos lo antes posible.",
+  "importantTitle": "¿Qué sucede ahora?",
+  "point1": "Tu reservación aún no está confirmada.",
+  "point2": "No realizas ningún pago por adelantado.",
+  "point3": "El pago se realiza directamente al operador local el día del tour una vez confirmada tu reservación.",
+  "viewTours": "Explorar más tours",
+  "home": "Volver al inicio"
+}
+}
