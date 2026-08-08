@@ -4,9 +4,9 @@ export const siteConfig = {
 
   email: "maviqm4@gmail.com",
 
-  phone: "+506 8638-8839",
+  phone: "+506 8639-8839",
 
-  whatsappNumber: "50686388839",
+  whatsappNumber: "50686398839",
 
   location: "La Fortuna, San Carlos, Costa Rica",
 
