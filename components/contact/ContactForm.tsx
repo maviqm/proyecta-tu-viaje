@@ -11,9 +11,7 @@ export default async function ContactForm({
   selectedSlug,
   locale,
 }: ContactFormProps) {
-  // IMPORTANTE:
-  // enviamos locale para obtener los nombres
-  // de los tours en el idioma correcto.
+  // Obtenemos los tours en el idioma actual.
   const tours = await getTourOptions(locale);
 
   const selectedTour = tours.find(
@@ -25,36 +23,47 @@ export default async function ContactForm({
     namespace: "Contact.form",
   });
 
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    "https://www.proyectatuviaje.com";
+
   return (
-    <div className="rounded-2xl bg-white p-7 shadow-md sm:p-10">
-      <h2 className="text-3xl font-bold text-gray-900">
+    <div className="min-w-0 rounded-2xl bg-white p-4 shadow-md sm:p-7 lg:p-10">
+      {/* HEADER */}
+      <h2 className="break-words text-2xl font-bold leading-tight text-gray-900 sm:text-3xl">
         {t("title")}
       </h2>
 
-      <p className="mt-3 leading-7 text-gray-600">
+      <p className="mt-3 break-words text-sm leading-6 text-gray-600 sm:text-base sm:leading-7">
         {t("description")}
       </p>
 
       {/* TRUST BOX */}
-      <div className="mt-6 rounded-2xl border border-green-200 bg-green-50 p-5">
-        <p className="font-bold text-green-900">
+      <div className="mt-6 min-w-0 rounded-2xl border border-green-200 bg-green-50 p-4 sm:p-5">
+        <p className="break-words font-bold text-green-900">
           {t("trustTitle")}
         </p>
 
         <ul className="mt-3 space-y-2 text-sm leading-6 text-green-800">
-          <li className="flex gap-2">
-            <span className="font-bold">✓</span>
-            <span>{t("trustNoAdvancePayment")}</span>
+          <li className="flex min-w-0 items-start gap-2">
+            <span className="shrink-0 font-bold">✓</span>
+            <span className="min-w-0 flex-1 break-words">
+              {t("trustNoAdvancePayment")}
+            </span>
           </li>
 
-          <li className="flex gap-2">
-            <span className="font-bold">✓</span>
-            <span>{t("trustDirectPayment")}</span>
+          <li className="flex min-w-0 items-start gap-2">
+            <span className="shrink-0 font-bold">✓</span>
+            <span className="min-w-0 flex-1 break-words">
+              {t("trustDirectPayment")}
+            </span>
           </li>
 
-          <li className="flex gap-2">
-            <span className="font-bold">✓</span>
-            <span>{t("trustFreeCancellation")}</span>
+          <li className="flex min-w-0 items-start gap-2">
+            <span className="shrink-0 font-bold">✓</span>
+            <span className="min-w-0 flex-1 break-words">
+              {t("trustFreeCancellation")}
+            </span>
           </li>
         </ul>
       </div>
@@ -63,7 +72,7 @@ export default async function ContactForm({
       <form
         action="https://formspree.io/f/mjgngwwd"
         method="POST"
-        className="mt-8 space-y-6"
+        className="mt-8 min-w-0 space-y-6"
       >
         {/* EMAIL SUBJECT */}
         <input
@@ -76,11 +85,11 @@ export default async function ContactForm({
         <input
           type="hidden"
           name="_next"
-          value={`http://localhost:3000/${locale}/thank-you`}
+          value={`${siteUrl}/${locale}/thank-you`}
         />
 
         {/* NAME / EMAIL */}
-        <div className="grid gap-6 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6">
           <FormField
             label={t("fullName")}
             name="name"
@@ -97,10 +106,10 @@ export default async function ContactForm({
         </div>
 
         {/* TOUR */}
-        <div>
+        <div className="min-w-0">
           <label
             htmlFor="tour"
-            className="block font-semibold text-gray-800"
+            className="block break-words font-semibold text-gray-800"
           >
             {t("tour")}
           </label>
@@ -109,7 +118,7 @@ export default async function ContactForm({
             id="tour"
             name="tour"
             defaultValue={selectedTour?.slug ?? ""}
-            className="mt-2 w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-gray-900 outline-none transition focus:border-green-700 focus:ring-2 focus:ring-green-200"
+            className="mt-2 w-full min-w-0 rounded-xl border border-gray-300 bg-white px-3 py-3 text-sm text-gray-900 outline-none transition focus:border-green-700 focus:ring-2 focus:ring-green-200 sm:px-4 sm:text-base"
             required
           >
             <option value="" disabled>
@@ -127,24 +136,24 @@ export default async function ContactForm({
           </select>
 
           {tours.length === 0 && (
-            <p className="mt-2 text-sm text-red-600">
+            <p className="mt-2 break-words text-sm text-red-600">
               {t("noTours")}
             </p>
           )}
         </div>
 
-        {/* DATE / TIME / PEOPLE */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {/* DATE / TIME */}
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6">
           <FormField
             label={t("preferredDate")}
             name="date"
             type="date"
           />
 
-          <div>
+          <div className="min-w-0">
             <label
               htmlFor="time"
-              className="block font-semibold text-gray-800"
+              className="block break-words font-semibold text-gray-800"
             >
               {t("preferredTime")}
             </label>
@@ -153,7 +162,7 @@ export default async function ContactForm({
               id="time"
               name="time"
               defaultValue=""
-              className="mt-2 w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-gray-900 outline-none transition focus:border-green-700 focus:ring-2 focus:ring-green-200"
+              className="mt-2 w-full min-w-0 rounded-xl border border-gray-300 bg-white px-3 py-3 text-sm text-gray-900 outline-none transition focus:border-green-700 focus:ring-2 focus:ring-green-200 sm:px-4 sm:text-base"
               required
             >
               <option value="" disabled>
@@ -168,7 +177,10 @@ export default async function ContactForm({
               <option value="15:00">3:00 PM</option>
             </select>
           </div>
+        </div>
 
+        {/* PEOPLE */}
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6">
           <FormField
             label={t("adults")}
             name="adults"
@@ -187,10 +199,10 @@ export default async function ContactForm({
         </div>
 
         {/* MESSAGE */}
-        <div>
+        <div className="min-w-0">
           <label
             htmlFor="message"
-            className="block font-semibold text-gray-800"
+            className="block break-words font-semibold text-gray-800"
           >
             {t("message")}
           </label>
@@ -200,7 +212,7 @@ export default async function ContactForm({
             name="message"
             rows={5}
             placeholder={t("messagePlaceholder")}
-            className="mt-2 w-full resize-y rounded-xl border border-gray-300 px-4 py-3 text-gray-900 outline-none transition focus:border-green-700 focus:ring-2 focus:ring-green-200"
+            className="mt-2 w-full min-w-0 resize-y rounded-xl border border-gray-300 px-3 py-3 text-sm text-gray-900 outline-none transition focus:border-green-700 focus:ring-2 focus:ring-green-200 sm:px-4 sm:text-base"
           />
         </div>
 
@@ -208,12 +220,12 @@ export default async function ContactForm({
         <button
           type="submit"
           disabled={tours.length === 0}
-          className="w-full rounded-xl bg-green-700 px-6 py-4 font-semibold text-white transition hover:bg-green-800 disabled:cursor-not-allowed disabled:bg-gray-400"
+          className="w-full break-words rounded-xl bg-green-700 px-5 py-4 text-center font-semibold text-white transition hover:bg-green-800 disabled:cursor-not-allowed disabled:bg-gray-400 sm:px-6"
         >
           {t("submit")}
         </button>
 
-        <p className="text-center text-sm leading-6 text-gray-500">
+        <p className="break-words text-center text-sm leading-6 text-gray-500">
           {t("confirmationNotice")}
         </p>
       </form>

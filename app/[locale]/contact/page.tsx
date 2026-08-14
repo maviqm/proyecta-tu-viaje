@@ -25,16 +25,20 @@ export default async function ContactPage({
     <>
       <Header />
 
-      <main className="bg-gray-50">
+      <main className="overflow-hidden bg-gray-50">
         <ContactHero />
 
-        <section className="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[2fr_1fr] lg:px-8">
-          <ContactForm
-            selectedSlug={selectedSlug}
-            locale={locale}
-          />
+        <section className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-10 sm:px-6 sm:py-12 lg:grid-cols-[minmax(0,2fr)_minmax(280px,1fr)] lg:gap-10 lg:px-8 lg:py-16">
+          <div className="min-w-0">
+            <ContactForm
+              selectedSlug={selectedSlug}
+              locale={locale}
+            />
+          </div>
 
-          <ContactSidebar locale={locale} />
+          <div className="min-w-0">
+            <ContactSidebar locale={locale} />
+          </div>
         </section>
       </main>
 

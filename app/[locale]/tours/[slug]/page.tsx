@@ -60,9 +60,9 @@ export default async function TourPage({
     <>
       <Header />
 
-      <main className="bg-white">
-        {/* Imagen principal */}
-        <section className="relative h-[420px] w-full sm:h-[520px]">
+      <main className="overflow-hidden bg-white">
+        {/* HERO IMAGE */}
+        <section className="relative min-h-[440px] w-full sm:min-h-[500px] lg:min-h-[560px]">
           <Image
             src={tour.image}
             alt={`${tour.title} - La Fortuna, Costa Rica`}
@@ -72,36 +72,38 @@ export default async function TourPage({
             sizes="100vw"
           />
 
-          <div className="absolute inset-0 bg-black/45" />
+          <div className="absolute inset-0 bg-black/50" />
 
-          <div className="absolute inset-0 flex items-end">
-            <div className="mx-auto w-full max-w-7xl px-6 pb-12 sm:px-8">
-              <p className="font-semibold uppercase tracking-widest text-green-200">
+          <div className="relative z-10 flex min-h-[440px] items-end sm:min-h-[500px] lg:min-h-[560px]">
+            <div className="mx-auto w-full max-w-7xl px-4 pb-8 pt-24 sm:px-6 sm:pb-10 lg:px-8 lg:pb-14">
+              <p className="max-w-3xl break-words text-xs font-semibold uppercase tracking-widest text-green-200 sm:text-sm">
                 {tour.category} · {tour.location}
               </p>
 
-              <h1 className="mt-3 max-w-4xl text-4xl font-bold text-white sm:text-6xl">
+              <h1 className="mt-3 max-w-4xl break-words text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-6xl">
                 {tour.title}
               </h1>
 
-              <p className="mt-4 max-w-2xl text-lg leading-8 text-gray-100">
+              <p className="mt-4 max-w-2xl break-words text-base leading-7 text-gray-100 sm:text-lg sm:leading-8">
                 {tour.shortDescription}
               </p>
             </div>
           </div>
         </section>
 
-        {/* Información principal */}
-        <section className="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-[2fr_1fr] lg:px-8">
-          <div>
+        {/* MAIN INFORMATION */}
+        <section className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-12 sm:px-6 sm:py-14 lg:grid-cols-[minmax(0,2fr)_minmax(280px,1fr)] lg:gap-12 lg:px-8 lg:py-16">
+          {/* TOUR CONTENT */}
+          <div className="min-w-0">
             <Link
               href="/#tours"
-              className="font-semibold text-green-700 hover:text-green-900"
+              className="inline-flex max-w-full items-center break-words font-semibold text-green-700 transition hover:text-green-900"
             >
               ← {t("back")}
             </Link>
 
-            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {/* INFO CARDS */}
+            <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
               <InfoCard
                 label={t("duration")}
                 value={tour.duration}
@@ -123,19 +125,21 @@ export default async function TourPage({
               />
             </div>
 
-            <div className="mt-12">
-              <h2 className="text-3xl font-bold text-gray-900">
+            {/* DESCRIPTION */}
+            <div className="mt-10 min-w-0 sm:mt-12">
+              <h2 className="break-words text-2xl font-bold leading-tight text-gray-900 sm:text-3xl">
                 {t("about")}
               </h2>
 
-              <p className="mt-5 text-lg leading-8 text-gray-600">
+              <p className="mt-4 break-words text-base leading-7 text-gray-600 sm:mt-5 sm:text-lg sm:leading-8">
                 {tour.description}
               </p>
             </div>
 
-            <div className="mt-12 grid gap-10 md:grid-cols-2">
-              <div>
-                <h2 className="text-2xl font-bold text-gray-900">
+            {/* INCLUDES / WHAT TO BRING */}
+            <div className="mt-10 grid grid-cols-1 gap-8 sm:mt-12 md:grid-cols-2 md:gap-10">
+              <div className="min-w-0">
+                <h2 className="break-words text-xl font-bold leading-tight text-gray-900 sm:text-2xl">
                   {t("includes")}
                 </h2>
 
@@ -144,25 +148,27 @@ export default async function TourPage({
                     {tour.includes.map((item: string, index: number) => (
                       <li
                         key={`${item}-${index}`}
-                        className="flex gap-3 text-gray-700"
+                        className="flex min-w-0 items-start gap-3 text-sm leading-6 text-gray-700 sm:text-base sm:leading-7"
                       >
-                        <span className="font-bold text-green-700">
+                        <span className="shrink-0 font-bold text-green-700">
                           ✓
                         </span>
 
-                        <span>{item}</span>
+                        <span className="min-w-0 flex-1 break-words">
+                          {item}
+                        </span>
                       </li>
                     ))}
                   </ul>
                 ) : (
-                  <p className="mt-5 text-gray-600">
+                  <p className="mt-5 break-words text-gray-600">
                     {t("noInformation")}
                   </p>
                 )}
               </div>
 
-              <div>
-                <h2 className="text-2xl font-bold text-gray-900">
+              <div className="min-w-0">
+                <h2 className="break-words text-xl font-bold leading-tight text-gray-900 sm:text-2xl">
                   {t("whatToBring")}
                 </h2>
 
@@ -171,18 +177,20 @@ export default async function TourPage({
                     {tour.whatToBring.map((item: string, index: number) => (
                       <li
                         key={`${item}-${index}`}
-                        className="flex gap-3 text-gray-700"
+                        className="flex min-w-0 items-start gap-3 text-sm leading-6 text-gray-700 sm:text-base sm:leading-7"
                       >
-                        <span className="font-bold text-green-700">
+                        <span className="shrink-0 font-bold text-green-700">
                           ✓
                         </span>
 
-                        <span>{item}</span>
+                        <span className="min-w-0 flex-1 break-words">
+                          {item}
+                        </span>
                       </li>
                     ))}
                   </ul>
                 ) : (
-                  <p className="mt-5 text-gray-600">
+                  <p className="mt-5 break-words text-gray-600">
                     {t("noInformation")}
                   </p>
                 )}
@@ -190,63 +198,69 @@ export default async function TourPage({
             </div>
           </div>
 
-          {/* Caja de reservación */}
-          <aside className="h-fit rounded-2xl border border-gray-200 bg-white p-7 shadow-lg lg:sticky lg:top-8">
-            <p className="text-sm text-gray-500">
+          {/* RESERVATION CARD */}
+          <aside className="h-fit min-w-0 rounded-2xl border border-gray-200 bg-white p-5 shadow-lg sm:p-7 lg:sticky lg:top-28">
+            <p className="break-words text-sm text-gray-500">
               {t("priceAdult")}
             </p>
 
-            <p className="mt-1 text-4xl font-bold text-green-800">
+            <p className="mt-1 break-words text-3xl font-bold leading-tight text-green-800 sm:text-4xl">
               {t("from")} ${tour.priceAdult}
             </p>
 
             {tour.priceChild !== null &&
               tour.priceChild !== undefined && (
-                <p className="mt-2 text-gray-600">
+                <p className="mt-2 break-words text-sm text-gray-600 sm:text-base">
                   {t("childrenFrom")} ${tour.priceChild}
                 </p>
               )}
 
             <div className="my-6 border-t border-gray-200" />
 
-            <p className="leading-7 text-gray-600">
+            <p className="break-words text-sm leading-6 text-gray-600 sm:text-base sm:leading-7">
               {t("reservationInfo")}
             </p>
 
             <div className="mt-6 rounded-xl border border-green-200 bg-green-50 p-4">
-              <ul className="space-y-2 text-sm leading-6 text-green-900">
-                <li className="flex gap-2">
-                  <span className="font-bold">✓</span>
-                  <span>{t("noAdvancePayment")}</span>
+              <ul className="space-y-3 text-sm leading-6 text-green-900">
+                <li className="flex min-w-0 items-start gap-2">
+                  <span className="shrink-0 font-bold">✓</span>
+                  <span className="min-w-0 flex-1 break-words">
+                    {t("noAdvancePayment")}
+                  </span>
                 </li>
 
-                <li className="flex gap-2">
-                  <span className="font-bold">✓</span>
-                  <span>{t("directPayment")}</span>
+                <li className="flex min-w-0 items-start gap-2">
+                  <span className="shrink-0 font-bold">✓</span>
+                  <span className="min-w-0 flex-1 break-words">
+                    {t("directPayment")}
+                  </span>
                 </li>
 
-                <li className="flex gap-2">
-                  <span className="font-bold">✓</span>
-                  <span>{t("freeCancellation")}</span>
+                <li className="flex min-w-0 items-start gap-2">
+                  <span className="shrink-0 font-bold">✓</span>
+                  <span className="min-w-0 flex-1 break-words">
+                    {t("freeCancellation")}
+                  </span>
                 </li>
               </ul>
             </div>
 
             <Link
               href={`/contact?tour=${tour.slug}`}
-              className="mt-6 block rounded-xl bg-green-700 px-6 py-4 text-center font-semibold text-white transition hover:bg-green-800"
+              className="mt-6 flex w-full items-center justify-center rounded-xl bg-green-700 px-5 py-4 text-center font-semibold text-white transition hover:bg-green-800 sm:px-6"
             >
               {t("requestReservation")}
             </Link>
 
             <Link
               href="/contact"
-              className="mt-3 block rounded-xl border-2 border-green-700 px-6 py-4 text-center font-semibold text-green-700 transition hover:bg-green-700 hover:text-white"
+              className="mt-3 flex w-full items-center justify-center rounded-xl border-2 border-green-700 px-5 py-4 text-center font-semibold text-green-700 transition hover:bg-green-700 hover:text-white sm:px-6"
             >
               {t("contactUs")}
             </Link>
 
-            <p className="mt-5 text-center text-sm leading-6 text-gray-500">
+            <p className="mt-5 break-words text-center text-sm leading-6 text-gray-500">
               {t("paymentNotice")}
             </p>
           </aside>
@@ -268,12 +282,12 @@ function InfoCard({
   value,
 }: InfoCardProps) {
   return (
-    <div className="rounded-xl bg-green-50 p-5">
-      <p className="text-sm font-semibold uppercase tracking-wide text-green-700">
+    <div className="min-w-0 rounded-xl bg-green-50 p-4 sm:p-5">
+      <p className="break-words text-xs font-semibold uppercase tracking-wide text-green-700 sm:text-sm">
         {label}
       </p>
 
-      <p className="mt-2 font-semibold text-gray-900">
+      <p className="mt-2 break-words text-sm font-semibold leading-6 text-gray-900 sm:text-base">
         {value}
       </p>
     </div>

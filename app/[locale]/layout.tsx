@@ -17,7 +17,7 @@ const poppins = Poppins({
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
-  "https://proyecta-tu-viaje.vercel.app";
+  "https://www.proyectatuviaje.com";
 
 type LocaleLayoutProps = {
   children: React.ReactNode;
@@ -44,8 +44,8 @@ export async function generateMetadata({
     : "Proyecta Tu Viaje | Costa Rica Tours";
 
   const description = isSpanish
-    ? "Tours personalizados y experiencias inolvidables en La Fortuna, Costa Rica."
-    : "Personalized tours and unforgettable experiences in La Fortuna, Costa Rica.";
+    ? "Descubre tours y experiencias inolvidables en La Fortuna, Costa Rica. Naturaleza, aventura y experiencias seleccionadas con operadores locales."
+    : "Discover unforgettable tours and experiences in La Fortuna, Costa Rica. Nature, adventure and carefully selected experiences with local operators.";
 
   return {
     metadataBase: new URL(siteUrl),
@@ -62,6 +62,7 @@ export async function generateMetadata({
       languages: {
         es: "/es",
         en: "/en",
+        "x-default": "/es",
       },
     },
 
@@ -73,17 +74,32 @@ export async function generateMetadata({
       siteName: "Proyecta Tu Viaje",
       title,
       description,
+      images: [
+        {
+          url: "/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: isSpanish
+            ? "Proyecta Tu Viaje - Tours y experiencias en Costa Rica"
+            : "Proyecta Tu Viaje - Tours and experiences in Costa Rica",
+        },
+      ],
     },
 
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      images: ["/og-image.jpg"],
     },
 
     robots: {
       index: true,
       follow: true,
+    },
+
+    icons: {
+      icon: "/favicon.ico",
     },
   };
 }

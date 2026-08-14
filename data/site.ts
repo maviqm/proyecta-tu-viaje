@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Proyecta Tu Viaje",
   slogan: "Costa Rica Experiences",
 
-  email: "maviqm4@gmail.com",
+  email: "info.proyectatuviaje@gmail.com",
 
   phone: "+506 8639-8839",
 
